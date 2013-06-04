@@ -4,13 +4,13 @@ var blackout_css_content = document.createTextNode(
     "#blackout * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}" + 
     "#blackout { background-color: #3C261C; background-image: url(http://moztw.org/events/blackout/blackout-background.jpg); background-repeat: no-repeat; background-size: cover; font-size: 16px; height: 100%; left: 0; margin: 0; overflow: hidden; position: fixed; text-align: left; top: 0; -webkit-transition: top 0.8s; transition: top 0.8s; width: 100%; z-index: 99999; }" +
     "#blackout.out { top: -150%; }" + 
-    "#blackout section { background: rgba(0, 0, 0, 0.2); border-radius: 1em; color: white; line-height: 1.5em; margin: 5% auto; max-height: 75%; max-width: 750px; overflow-y: auto; padding: 3%; text-shadow: 1px 3px 3px black; width: 75%; }" + 
+    "#blackout section { background: rgba(0, 0, 0, 0.2); border-radius: 1em; color: white; line-height: 1.5em; margin: 5% auto 3%; max-height: 70%; max-width: 750px; overflow-y: auto; padding: 3%; text-shadow: 1px 3px 3px black; width: 75%; }" + 
     "#blackout p { color: white; line-height: 1.5em; text-shadow: 1px 3px 3px black; }" + 
     "#blackout h1 { border-bottom: 1px solid #CCC; color: white; font-family: sans-serif; font-size: 1.5em; font-weight: bold; line-height: 1.5em; margin: 0 0 1em 0.25em; padding: 0 0 0.25em; }" + 
     "#blackout a { color: #CCC; text-decoration: underline; } #blackout a:hover { background: transparent; color: #EEEEEE; text-decoration: underline; }" +
     "#blackout .anno { color: #BBB; font-size: 0.9em; margin-bottom: 1.5em; padding: 0 2em; text-shadow: 1px 1px 1px black;}" +
-    "#blackout footer { max-height: 20%; text-align: center; } " +
-    "#blackout .blackout-btn { background-color: black; border-radius: 8px 8px 8px 8px; box-shadow: 0 0 15px white; color: white; padding: 0.5em 1em 0.35em; text-decoration: none; }" + 
+    "#blackout footer { display: block; height: 20%; text-align: center; } " +
+    "#blackout .blackout-btn { background-color: black; border-radius: 8px; box-shadow: 0 0 15px white; color: white; display: inline-block; line-height: 1.5em; padding: 0.5em 1em; text-decoration: none; }" + 
     "#blackout .blackout-btn:hover { background-color: #333; color: white; text-decoration: none; }"
 );
 blackout_css.appendChild(blackout_css_content);
