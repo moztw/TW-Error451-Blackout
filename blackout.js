@@ -2,7 +2,8 @@
 var blackout_css = document.createElement("style");
 var blackout_css_content = document.createTextNode(
     "#blackout * { -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box;}" + 
-    "#blackout { background-color: #A05729; background-image: url(http://moztw.org/events/blackout/blackout-background.jpg); background-repeat: no-repeat; background-size: cover; font-size: 16px; height: 89%; left: 0; margin: 0; overflow: hidden; padding: 5%; position: absolute; top: 0; width: 90%;}" + 
+    "#blackout { background-color: #A05729; background-image: url(http://moztw.org/events/blackout/blackout-background.jpg); background-repeat: no-repeat; background-size: cover; font-size: 16px; height: 89%; left: 0; margin: 0; overflow: hidden; padding: 5%; position: absolute; top: 0; transition: top 0.8s; -webkit-transition: top 0.8s; width: 90%;}" +
+    "#blackout.out { top: -150%; }" + 
     "#blackout section { background: rgba(0, 0, 0, 0.2); border-radius: 1em; color: white; line-height: 1.8em; margin: 0 auto; max-width: 800px; padding: 0.5% 3%; text-shadow: 1px 3px 3px black; width: 75%; }" + 
     "#blackout h1 { color: white; font-family: sans-serif; font-size: 1.5em; font-weight: bold; }" + 
     "#blackout a { color: #CCC; } #blackout a:hover { color: #EEE;}" +
@@ -66,7 +67,7 @@ blackout_css.appendChild(blackout_css_content);
     var footer_content_close = document.createElement("a");
     footer_content_close.setAttribute("href", "javascript:void(0)");
     footer_content_close.setAttribute("class", "blackout-btn");
-    footer_content_close.setAttribute("onclick", "document.getElementById('blackout').style.display = 'none'");
+    footer_content_close.setAttribute("onclick", "document.getElementById('blackout').className = document.getElementById('blackout').className+' out';");
     footer_content_close.appendChild(document.createTextNode("繼續瀏覽網頁"));
     footer.appendChild(footer_content_close);
 
