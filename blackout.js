@@ -1,7 +1,7 @@
 //套上CSS樣式
 var blackout_css = document.createElement("style");
 var blackout_css_content = document.createTextNode(
-    "#blackout { background-color: #A05729; background-image: url(blackout-background.jpg); background-repeat: no-repeat; background-size: cover; font-size: 20px; height: 90%; left: 0; margin: 0; overflow: hidden; padding: 5%; position: absolute; top: 0; width: 90%;}" + 
+    "#blackout { background-color: #A05729; background-image: url(http://moztw.org/events/blackout/blackout-background.jpg); background-repeat: no-repeat; background-size: cover; font-size: 20px; height: 90%; left: 0; margin: 0; overflow: hidden; padding: 5%; position: absolute; top: 0; width: 90%;}" + 
     "#blackout h1 { color: white; font-family: sans-serif; font-size: 1.5em; font-weight: bold; }" + 
     "#blackout section { color: white; margin: 0 auto; line-height: 1.8em; max-width: 800px; text-shadow: 1px 3px 3px black; width: 75%; }" + 
     "#blackout a { color: #CCC; } #blackout a:hover { color: #EEE;}" +
