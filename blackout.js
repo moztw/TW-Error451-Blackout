@@ -50,7 +50,7 @@ blackout_css.appendChild(blackout_css_content);
     content5.appendChild(document.createTextNode("請加入："));
 
     var content5_content_a = document.createElement("a");
-    content5_content_a.setAttribute("href", "https://www.facebook.com/events/486224794784563/");
+    content5_content_a.setAttribute("href", "http://taiwanfreeandopen.blogspot.tw/");
     content5_content_a.setAttribute("target", "_blank");
     content5_content_a.appendChild(document.createTextNode("#freeandopen 斷然反對鎖國！堅決主張百分之百的網路自由！"));
     content5.appendChild(content5_content_a);
