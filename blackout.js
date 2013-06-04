@@ -2,10 +2,10 @@
 var blackout_css = document.createElement("style");
 var blackout_css_content = document.createTextNode(
     "#blackout * { -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box;}" + 
-    "#blackout { background-color: #A05729; background-image: url(http://moztw.org/events/blackout/blackout-background.jpg); background-repeat: no-repeat; background-size: cover; font-size: 16px; height: 89%; left: 0; margin: 0; overflow: hidden; padding: 5%; position: absolute; text-align: left; top: 0; transition: top 0.8s; -webkit-transition: top 0.8s; width: 90%; z-index: 99999; }" +
+    "#blackout { background-color: #A05729; background-image: url(http://moztw.org/events/blackout/blackout-background.jpg); background-repeat: no-repeat; background-size: cover; font-size: 16px; height: 89%; left: 0; margin: 0; overflow: hidden; padding: 5%; position: absolute; text-align: left; top: 0; -webkit-transition: top 0.8s ease 0s; transition: top 0.8s ease 0s; width: 90%; z-index: 99999; }" +
     "#blackout.out { top: -150%; }" + 
-    "#blackout section { background: rgba(0, 0, 0, 0.2); border-radius: 1em; color: white; line-height: 1.5em; margin: 0 auto; max-width: 800px; padding: 0.5% 3%; text-shadow: 1px 3px 3px black; width: 75%; }" + 
-    "#blackout h1 { border-bottom: 1px solid #CCC; color: white; font-family: sans-serif; font-size: 1.5em; font-weight: bold; margin-bottom: 1em; padding-bottom: 0.25em; }" + 
+    "#blackout section { background: rgba(0, 0, 0, 0.2); border-radius: 1em; color: white; line-height: 1.5em; margin: 0 auto; max-width: 750px; padding: 3%; text-shadow: 1px 3px 3px black; width: 75%; }" + 
+    "#blackout h1 { border-bottom: 1px solid #CCC; color: white; font-family: sans-serif; font-size: 1.5em; font-weight: bold; line-height: 1.5em; margin: 0 0 1em 0.25em; padding: 0 0 0.25em; }" + 
     "#blackout a { color: #CCC; text-decoration: underline; } #blackout a:hover { background: transparent; color: #EEEEEE; text-decoration: underline; }" +
     "#blackout .anno { color: #BBB; font-size: 0.9em; margin-bottom: 1.5em; padding: 0 2em; text-shadow: 1px 1px 1px black;}" +
     "#blackout footer { margin-top: 3rem; text-align: center;} " +
