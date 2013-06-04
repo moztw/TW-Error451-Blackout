@@ -72,7 +72,7 @@ blackout_css.appendChild(blackout_css_content);
     footer.appendChild(footer_content_close);
 
 //建立抗議內容到#blackout區塊
-window.onload = function()
+function showBlackout()
 {
     var element = document.createElement("div");
     element.id = 'blackout';
@@ -81,3 +81,8 @@ window.onload = function()
     element.appendChild(footer);
     document.body.appendChild(element);
 }
+
+if (window.addEventListener)
+    window.addEventListener('load', function(){ showBlackout() }, false);
+else if (window.attachEvent)
+    window.attachEvent('on' + 'load', function(){ showBlackout() });
