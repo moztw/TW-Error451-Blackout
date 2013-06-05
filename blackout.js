@@ -1,4 +1,5 @@
 //套上CSS樣式
+(function() {
 var blackout_css = document.createElement("style");
 var blackout_css_content = document.createTextNode(
     "#blackout * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}" + 
@@ -87,3 +88,4 @@ if (window.addEventListener)
     window.addEventListener('load', function(){ showBlackout() }, false);
 else if (window.attachEvent)
     window.attachEvent('on' + 'load', function(){ showBlackout() });
+})();
